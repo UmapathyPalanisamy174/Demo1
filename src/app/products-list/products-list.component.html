@@ -1,0 +1,24 @@
+<div align="center">
+    <br><br><br><br><br>
+<h1>Product List</h1>
+<table border="3px solid">
+    <thead>
+        <tr>
+            <th align="center">Product No</th>
+            <th align="center">Product Name</th>
+            <th align="center">Manufacturer</th>
+            <th align="center">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of products">
+            <td align="center"><a [routerLink]="['/products',p.productno]">{{p.productno}}</a></td>
+            <td align="center">{{p.productname}}</td>
+            <td align="center">{{p.manufacturer}}</td>
+            <td align="center">{{p.price}}</td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br>
+<router-outlet></router-outlet><br><br><br>
+</div>

@@ -1,0 +1,24 @@
+<div align="center" style="color:darkblue; font-size: 30px; background-color: darkkhaki;">
+  <h1>Accenture Technology Solutions Pvt Ltd</h1>
+  <a routerLink="home" routerLinkActive="SelectedItem">Home</a> &nbsp;&nbsp;&nbsp;
+  <a routerLink="employees" routerLinkActive="SelectedItem">Employees</a> &nbsp;&nbsp;&nbsp;
+  <a routerLink="products" routerLinkActive="SelectedItem">Products</a> &nbsp;&nbsp;&nbsp;
+  <a routerLink="contactus" routerLinkActive="SelectedItem">Contact Us</a> &nbsp;&nbsp;&nbsp;
+</div>
+<router-outlet></router-outlet>
+  <!-- <app-home></app-home>
+  <app-employees-list></app-employees-list>
+  <app-products-list></app-products-list>
+  <app-contactus></app-contactus>
+  <app-page-notfound></app-page-notfound> -->
+
+  <!--Step 1 -> First add RouterModule into app.module.ts Imports Section-->
+  <!--.forRoot function of RouterModule with an array as argument.. each row should be in json format and count should be equal to total number of routes -->
+  <!--** -> Not a valid route-->
+  <!--Path and Component as two parameters-->
+  <!--Always instruct Angular to consider Full match-->
+  <!--In HTML <A routerLink="home"-->
+  <!--Add router-outlet at the end-->
+  <!--routerLinkActive to display the selected menu in different color-->
+  <!--Every parameter should be preceded by a :-->
+  <!--Parametrs of the URL can be taken using ActivatedRoute class-->
